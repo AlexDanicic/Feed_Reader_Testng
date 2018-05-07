@@ -1,6 +1,10 @@
+/*
+ There was a typo after :before, it was "*:before:" 
+ */
+
 *,
 *:after,
-*:before: {
+*:before {
     box-sizing: inherit;
 }
 
