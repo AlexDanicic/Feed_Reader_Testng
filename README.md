@@ -4,6 +4,7 @@
 
 * Feed-Reader-Testing Description
 * Instructions
+* Tested in this project
 * Sources
 
 ## *<u>Feed-Reader-Testing Description</u>*
