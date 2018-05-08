@@ -35,9 +35,12 @@ $(function() {
             for (var i = 0; i < allFeeds.length; i++) {
                 // this part does not expect name to be undefined
                 expect(allFeeds[i].url).toBeDefined();
+                //should expect url to be not empty
+                expect(allFeeds[i].url.length).not.toBe(0);
+                // this should expect that url is type of string
+                expect(typeof allFeeds[i].url).toBe('string')
             }
         });
-
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
