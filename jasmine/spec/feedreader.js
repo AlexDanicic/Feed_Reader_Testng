@@ -46,8 +46,17 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+        it('has a name defined and that the name is not empty', function() {
+            allFeeds.forEach(function(feed) {
+                // feed name should be defined
+                expect(feed.name).toBeDefined();
+                // expect that should not be empty
+                expect(feed.name).not.toBe('');
+                // expect to be a string
+                expect(typeof feed.name).toBe('string');
+            });
+        });
     });
-
 
     /* TODO: Write a new test suite named "The menu" */
 
